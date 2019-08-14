@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Dotsquares_Exportprofiles",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "This module helps you out exporting/importing newsletter subscribers using the Dataflow Advanced Profiles.",
+    "authors": [
+    {
+        "name": "Dotsquares",
+        "email": "support.extensions@dotsquares.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

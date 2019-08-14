@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Dotsquares_Exportprofiles</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This module helps you out exporting/importing newsletter subscribers using the Dataflow Advanced Profiles.</summary>
+    <description>This module helps you out exporting/importing newsletter subscribers using the Dataflow Advanced Profiles.</description>
+    <notes>First Release</notes>
+    <authors><author><name>Dotsquares</name><user>dotsquaresltd</user><email>support.extensions@dotsquares.com</email></author></authors>
+    <date>2017-03-03</date>
+    <time>12:27:08</time>
+    <contents><target name="magecommunity"><dir name="Dotsquares"><dir name="Exportprofiles"><dir name="data"><file name="DataFlowProfiles.txt" hash="7d37d22eca5cd2f555211a4b0f0d93a7"/><dir name="exportprofiles_setup"><file name="data-install-0.1.0.php" hash="41a060091fbf23d79915fff6815075ac"/></dir></dir><dir name="etc"><file name="config.xml" hash="246193ee6817c722946ea6ec135c0392"/></dir><dir name="Model"><dir name="Convert"><dir name="Adapter"><file name="Subscribers.php" hash="2bf9976e4c469cfad9ce62bc40abeabf"/></dir><dir name="Parser"><file name="Subscribers.php" hash="10b34bc68fa19d10dc6e946410ef88bd"/></dir></dir><file name="Observer.php" hash="93cb47eff4e0ab5865aa039e402cf7d5"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Dotsquares_Exportprofiles.xml" hash="170d334799c5773890d870413a03db38"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>7.0.0</max></php></required></dependencies>
+</package>

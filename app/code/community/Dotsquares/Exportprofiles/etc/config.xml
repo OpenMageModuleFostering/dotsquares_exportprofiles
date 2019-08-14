@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Dotsquares_Pickupfromstore extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category   	Dotsquares
+ * @package		Dotsquares_Pickupfromstore
+ * @copyright  	Copyright (c) 2013
+ * @license		http://opensource.org/licenses/mit-license.php MIT License
+ * @author		Suman Singh <suman.singh@dotsquares.com>
+ */
+-->
+<config>
+	<modules>
+		<Dotsquares_Exportprofiles>
+			<version>0.1.0</version>
+		</Dotsquares_Exportprofiles>
+	</modules>
+	<global>
+		<models>
+		  <dotsquares_exportprofiles>
+			<class>Dotsquares_Exportprofiles_Model</class>
+		  </dotsquares_exportprofiles>
+		</models>
+		<events>
+		  <newsletter_subscriber_save_before>
+			<observers>
+			  <subscribefix_observer_subscriber>
+				<type>singleton</type>
+				<class>Dotsquares_Exportprofiles_Model_Observer</class>
+				<method>setUpdateDate</method>
+			  </subscribefix_observer_subscriber>
+			</observers>
+		  </newsletter_subscriber_save_before>
+		</events>
+		<resources>
+            <exportprofiles_setup>
+                <setup>
+                    <module>Dotsquares_Exportprofiles</module>
+                </setup>
+            </exportprofiles_setup>
+        </resources>
+	</global>
+</config>
